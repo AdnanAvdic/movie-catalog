@@ -7,7 +7,7 @@ type Props = {
   movie: Movie;
 };
 
-export default function TrendingMovies({ movie }: Props) {
+export default function MovieLists({ movie }: Props) {
   return (
     <Link href={`/movie/${movie.id}`}>
       <article

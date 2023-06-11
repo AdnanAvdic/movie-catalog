@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Button,
@@ -12,7 +14,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <nav className="p-3 w-full bg-slate-950 ">
+    <nav className="p-3 w-full bg-slate-900 ">
       <div className="flex flex-row justify-between items-center max-w-6xl mx-auto">
         <div className="flex flex-row gap-3 items-center">
           <svg
@@ -21,7 +23,7 @@ export default function Header() {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-10 h-10 text-white"
+            className="w-10 h-10 text-slate-400"
           >
             <path
               strokeLinecap="round"
@@ -29,7 +31,7 @@ export default function Header() {
             />
           </svg>
 
-          <span className="font-semibold text-lg text-white">
+          <span className="font-semibold text-lg text-slate-400">
             <Link href="/" className="cursor-pointer">
               Movie Catalog
             </Link>
@@ -52,7 +54,7 @@ export default function Header() {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6 md:hidden text-white"
+                  className="w-6 h-6 md:hidden text-slate-400"
                 >
                   <path
                     strokeLinecap="round"
@@ -68,7 +70,7 @@ export default function Header() {
                 padding="0"
                 fontWeight="light"
                 border="#ffffff"
-                textColor="white"
+                textColor="gray.400"
                 bg="gray.700"
               >
                 <MenuItem background="gray.700" _hover={{ bg: "gray.900" }}>
@@ -87,7 +89,7 @@ export default function Header() {
           </Show>
 
           <Show above="md">
-            <ul className="flex flex-row items-center gap-2 text-white">
+            <ul className="flex flex-row items-center gap-2 text-slate-500">
               <li className="hover:bg-slate-700 rounded-md py-1 px-3 cursor-pointer transition-all">
                 Back to top
               </li>
