@@ -1,4 +1,5 @@
 import MovieLists from "@/components/MovieLists";
+import SearchForm from "@/components/SearchForm";
 import getPopularMovies from "@/lib/getPopularMovies";
 import getTopratedMovies from "@/lib/getTopratedMovies";
 import getTrendingMovies from "@/lib/getTrendingMovies";
@@ -25,13 +26,7 @@ export default async function Home() {
 
   return (
     <main className="p-3 relative mx-auto max-w-6xl">
-      <form className="mt-3 mb-6 ">
-        <input
-          type="text"
-          className="w-full rounded-full h-12 bg-slate-900 px-6 text-white placeholder:text-slate-500"
-          placeholder="Search your movie..."
-        />
-      </form>
+      <SearchForm />
 
       <div className="flex flex-row justify-between items-center">
         <h4 className="text-slate-400 font-bold text-3xl">Trending movies</h4>

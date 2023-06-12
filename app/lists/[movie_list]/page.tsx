@@ -1,8 +1,4 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import MovieListGridItem from "./components/MovieListGridItem";
-import InfiniteScroll from "react-infinite-scroll-component";
 import getMovieLists from "@/lib/getMovieLists";
 
 type Params = {
