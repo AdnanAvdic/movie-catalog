@@ -12,7 +12,10 @@ export default function SearchForm({}: Props) {
 
   const submitSearch = (event: React.FormEvent<HTMLElement>) => {
     event.preventDefault();
-    router.push(`search/${inputValue}`);
+
+    if (inputValue === "") {
+      router.push(`/`);
+    } else router.push(`search/${inputValue}`);
   };
 
   return (
@@ -27,7 +30,7 @@ export default function SearchForm({}: Props) {
 
       <button
         type="submit"
-        className="text-slate-400 bg-slate-900 px-4 py-1 rounded-tr-md rounded-br-md hover:scale-95 hover:text-slate-300 transition-all"
+        className="text-slate-400 bg-slate-900 px-4 py-1 rounded-tr-md rounded-br-md hover:scale-95 hover:text-slate-300 transition-all text-sm"
       >
         Search
       </button>

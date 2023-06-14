@@ -35,8 +35,6 @@ export default async function MovieLists({ params: { movie_list } }: Params) {
           <MovieListGridItem key={movie.id} movie={movie} />
         ))}
       </div>
-
-      <button className="text-slate-300 ">Load more</button>
     </main>
   );
 }

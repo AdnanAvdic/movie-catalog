@@ -28,8 +28,6 @@ export default async function MovieLists({ params: { search_query } }: Params) {
           <MovieSearchGridItem key={movie.id} movie={movie} />
         ))}
       </div>
-
-      <button className="text-slate-300 ">Load more</button>
     </main>
   );
 }
